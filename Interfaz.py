@@ -7,7 +7,7 @@ def entry_changed(event):
         label.config(text="Sueldo Bruto: $" + str(value))
         slider_changed(slider.get(), slider2.get(), slider3.get(), label2, label21, label22, label3)
     except ValueError:
-        label.config(text="¡Valor inválido! Introduzca un valor numérico")
+        label.config(text="¡Valor inválido! Introduzca un valor numérico", bg="red")
 
 # Botón para aplicar el descuento sindical
 def apply_discount():
@@ -39,7 +39,7 @@ def slider_changed(value, value1, value2, label2=None, label21=None, label22=Non
             label_sliders.config(text="Elija porcentajes para cada categoría:\n")
 
     else:
-        label_sliders.config(text="¡Los porcentajes suman más que el 100%!\n Cambie los valores")
+        label_sliders.config(text="¡Los porcentajes suman más que el 100%!\n Cambie los valores", bg="red")
   
 # Crear la ventana principal
 window = tk.Tk()
