@@ -36,7 +36,7 @@ def slider_changed(value, value1, value2, label2=None, label21=None, label22=Non
             discounted_value = initial_value * (1 - discount - discount1 - discount2)
             label3.config(text="Sueldo Neto: $" + str(round(discounted_value,3)))
             
-            label_sliders.config(text="Elija porcentajes para cada categoría:\n")
+            label_sliders.config(text="Elija porcentajes para cada categoría:\n", bg="#%02x%02x%02x" % (window.winfo_rgb(window["bg"])))
 
     else:
         label_sliders.config(text="¡Los porcentajes suman más que el 100%!\n Cambie los valores", bg="red")
