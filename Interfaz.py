@@ -4,7 +4,7 @@ import tkinter as tk
 def entry_changed(event):
     try:
         value = float(entry.get())
-        label.config(text="Sueldo Bruto: $" + str(value))
+        label.config(text="Sueldo Bruto: $" + str(value), bg="#%02x%02x%02x" % (window.winfo_rgb(window["bg"])))
         slider_changed(slider.get(), slider2.get(), slider3.get(), label2, label21, label22, label3)
     except ValueError:
         label.config(text="¡Valor inválido! Introduzca un valor numérico", bg="red")
