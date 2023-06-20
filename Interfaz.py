@@ -14,7 +14,6 @@ def apply_discount():
     discount = 0.02
     initial_value = float(entry.get())
     sindical_discount = initial_value * discount
-    discounted_value = initial_value - sindical_discount
     label.config(text="Sueldo Bruto: $" + str(initial_value))
     label4.config(text="Descuento Sindical (2%): $" + str(sindical_discount))
 
