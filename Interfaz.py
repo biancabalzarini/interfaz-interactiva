@@ -40,7 +40,7 @@ def slider_changed(value, value1, value2, label2=None, label21=None, label22=Non
             label_sliders.config(text="Elija porcentajes para cada categoría:\n")
 
     else:
-        label_sliders.config(text='¡Los porcentajes suman más que el 100%!\n Cambie los valores')
+        label_sliders.config(text="¡Los porcentajes suman más que el 100%!\n Cambie los valores")
   
 # Crear la ventana principal
 window = tk.Tk()
